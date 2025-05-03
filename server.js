@@ -12,7 +12,10 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // Cargar variables de entorno
-dotenv.config();
+//dotenv.config();
+dotenv.config({ path: '.env' });
+
+//console.log("🔑 OpenAI Key:", process.env.OPENAI_API_KEY ? "✅ Cargada" : "❌ Faltante");
 
 // Verificar configuración de OpenAI
 if (!process.env.OPENAI_API_KEY) {
