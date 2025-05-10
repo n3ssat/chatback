@@ -2,7 +2,7 @@
     import Game from '../models/Game.js';
     import dotenv from 'dotenv';
 
-    dotenv.config();
+   // dotenv.config();
 
     const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
